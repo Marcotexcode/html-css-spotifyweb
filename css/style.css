@@ -17,10 +17,27 @@ main {
     display: flex;
 }
 
+
+/******************** PARTE MENU SINISTRA **********************/
+
 aside {
     height: calc(100vh - 90px);
-    width: 80px;
     background-color:#000000;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-top-aside img {
+    display: flex;
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.menu-bottom-aside img:last-child {
+    background-color: grey;
+    border-radius: 50%;
 }
 
 .container-centrale {
