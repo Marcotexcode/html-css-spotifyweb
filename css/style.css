@@ -1,77 +1,53 @@
-
-
-
-
-/********************* TUTTO IL CONTENUTO ECCETTO IL FOOTER *****************/
-
-.container-corpo-aside {
-    height: calc(100vh - 100px);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
 
 
+/******************** PARTE GENERALE **********************/
 
 
 
-/********************* PARTE SINISTRA (ASIDE) CON MENU *****************/
+/******************** CORPO PAGINA **********************/
+
+main {
+    display: flex;
+}
 
 aside {
-    height: calc(100vh - 100px);
-    background-color: #000000;
+    height: calc(100vh - 90px);
+    width: 80px;
+    background-color:#000000;
 }
 
-
-
-
-
-
-/********************* PARTE PAGINA GENENRALE *****************/
-
-section {
-    height: 100vh;
+.container-centrale {
+    width: 100%;
 }
-
-
-
-
-
-
-
-
-
-/********************* PARTE PAGINA GENERALE *****************/
 
 header {
     width: 100%;
-    height: 100px;
-    background-color: green;
-    top: 0;
-    z-index: 9000;
+    height: 90px;
+    background-color: #080b12;
     position: fixed;
 }
 
-
-
-
-
-
-/********************* PARTE CORPODELLA PAGINA GENENRALE *****************/
-
-.corpo-pagina {
-    height: calc(100vh - 200px);
+.corpo-cont-centrale {
+    margin-top: 90px;
     overflow: auto;
-    background-color: blue;
-    margin-top: 100px;
+    background-color: #141922;
+    height: calc(100vh - 90px - 90px);
 }
 
 
 
-
-
-/********************* FOOTER *****************/
+/******************** FOOTER **********************/
 
 footer {
-    height: 100px;
-    background-color:grey;
+    width: 100%;
+    height: 90px;
+    background-color: #282828;
+   
 }
