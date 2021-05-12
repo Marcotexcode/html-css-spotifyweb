@@ -1,0 +1,26 @@
+
+.container-fluid {
+    position: relative;
+}
+
+
+
+header {
+    height: 100px;
+    background-color:red;
+}
+
+
+
+aside {
+    height: 100vh;
+    background-color: #000000;
+    z-index: 2000;
+}
+
+
+footer {
+    height: 100px;
+    background-color:grey;
+    position: fixed;
+}
