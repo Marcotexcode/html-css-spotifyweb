@@ -5,22 +5,27 @@
 
 
 
-header {
-    height: 100px;
+section {
+    height: 100vh;
+
     background-color:red;
 }
 
+
+header {
+    height: 100px;
+    background-color: green;
+}
 
 
 aside {
     height: 100vh;
     background-color: #000000;
-    z-index: 2000;
 }
 
 
 footer {
-    height: 100px;
+    height: 200px;
     background-color:grey;
-    position: fixed;
+    width: 100%;
 }
