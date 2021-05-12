@@ -3,20 +3,31 @@
     position: relative;
 }
 
+aside {
 
+}
 
 section {
     height: 100vh;
-
-    background-color:red;
 }
 
 
 header {
     height: 100px;
     background-color: green;
+    top: 0;
+    z-index: 900000;
 }
 
+.corpo-pagina {
+    height: 100vh;
+    overflow: auto;
+    background-color: blue;
+}
+
+.row{
+    position: relative;
+}
 
 aside {
     height: 100vh;
@@ -25,6 +36,7 @@ aside {
 
 
 footer {
+    
     height: 200px;
     background-color:grey;
     width: 100%;
