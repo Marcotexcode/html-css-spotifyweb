@@ -7,7 +7,16 @@
 
 body >* {
     color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+
+a {font-size: 12px;}
+h4 {font-size: 14px;}
+h3 {font-size: 15px;}
+span {font-size: 15px;}
+h2 {font-size: 20px;}
+
+
 
 /******************** PARTE GENERALE **********************/
 
@@ -97,7 +106,7 @@ header {
     text-align: center;
 }
 .menu ul li {
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 .menu ul li a {
     text-decoration: none;
@@ -107,13 +116,17 @@ header {
 
 /******************** CORPO CANZONI **********************/
 
-.box-song {
+.box-song, .box-song2 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.box-song img {
+.box-song2 img{
+    border-radius: 50%;
+}
+
+.box-song img, .box-song2 img {
     width: 160px;
 }
 
@@ -124,6 +137,9 @@ header {
     padding-bottom: 10px;
 }
 
+.sub {
+    margin: 0px 0px 20px 20px;
+}
 
 
 /******************** CORPO CENTRALE **********************/
@@ -141,4 +157,28 @@ footer {
     z-index: 9000;
     position: fixed;
     bottom: 0;
+    border: 1px solid red;
+}
+
+.box-foot img {
+    width: 40px;
+}
+
+.box-foot {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    margin: 0px 10px;
+}
+
+
+.col-xs-4 {
+    border: 1px solid red;
+}
+
+.col-xs-12 {
+    height: 40px;
+    border: 1px solid red;
 }
