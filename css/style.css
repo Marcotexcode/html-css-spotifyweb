@@ -5,7 +5,9 @@
 }
 
 
-
+body >* {
+    color: white;
+}
 
 /******************** PARTE GENERALE **********************/
 
@@ -53,10 +55,11 @@ aside {
 
 /******************** PARTE HEADER CONTENITORE CENTRALE **********************/
 
-header {
+header { 
     width: calc(100% - 49px) ;
     height: 90px;
-    background-color: #080b12;
+/******************** TROVARE EFFETTO TRASPARENTEEEEEEEEEEEE **********************/
+    background-color: #080b12; 
     position: fixed;
     display: flex;
     justify-content: flex-end;
@@ -73,10 +76,7 @@ header {
 }
 
 
-
-
-
-/******************** PARTE HEADER CONTENITORE CENTRALE **********************/
+/******************** PARTE CORPO CENTRALE **********************/
 
 
 .corpo-cont-centrale {
@@ -85,6 +85,50 @@ header {
     background-color: #141922;
     height: calc(100vh - 90px - 90px);
 }
+
+/******************** MENU CORPO **********************/
+
+.row h2 {
+    
+    margin: 20px;
+}
+.menu ul{
+    list-style: none;
+    text-align: center;
+}
+.menu ul li {
+    padding: 20px 0px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/******************** CORPO CANZONI **********************/
+
+.box-song {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-song img {
+    width: 160px;
+}
+
+.box-song h3 {
+    padding: 10px 0px;
+}
+.box-song span {
+    padding-bottom: 10px;
+}
+
+
+
+/******************** CORPO CENTRALE **********************/
+
+
 
 
 
