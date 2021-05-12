@@ -21,12 +21,12 @@ main {
 /******************** PARTE MENU SINISTRA **********************/
 
 aside {
-    height: calc(100vh - 90px);
     background-color:#000000;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 90px;
 }
 
 .menu-top-aside img {
@@ -40,19 +40,47 @@ aside {
     border-radius: 50%;
 }
 
+
+
+/******************** CONTENITORE CENTRALE **********************/
+
 .container-centrale {
     width: 100%;
 }
 
+
+
+
+/******************** PARTE HEADER CONTENITORE CENTRALE **********************/
+
 header {
-    width: 100%;
+    width: calc(100% - 49px) ;
     height: 90px;
     background-color: #080b12;
     position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px;
 }
 
+.btn a {
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+
+
+
+
+/******************** PARTE HEADER CONTENITORE CENTRALE **********************/
+
+
 .corpo-cont-centrale {
-    margin-top: 90px;
+    margin: 90px 0px;
     overflow: auto;
     background-color: #141922;
     height: calc(100vh - 90px - 90px);
@@ -66,5 +94,7 @@ footer {
     width: 100%;
     height: 90px;
     background-color: #282828;
-   
+    z-index: 9000;
+    position: fixed;
+    bottom: 0;
 }
