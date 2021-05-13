@@ -53,6 +53,7 @@ aside {
 .menu-top-aside ul li img, .menu-bottom-aside img {
     padding: 15px 0px;
     width: 30px;
+    
 }
 
 
@@ -74,8 +75,16 @@ aside {
 
 .menu-top-aside ul li a, .menu-bottom-aside ul li a {
     text-decoration: none;
-    color: white;
+    color: grey;
     /* display: none;  PER MOBILE*/
+}
+
+.menu-top-aside ul li a:hover, .menu-bottom-aside ul li a:hover {
+    color: white;
+}
+
+.menu-top-aside ul li:nth-child(1) a, .menu-bottom-aside ul li a {
+    color: white;
 }
 
 /********************  MENU CENTER **********************/
@@ -83,10 +92,12 @@ aside {
 .menu-over {
     overflow-y: auto;
     height: 100%;
+    /* display: none;  PER MOBILE*/
 }
 
 .menu-center-aside {
     margin: 10px 0px;
+    /* display: none;  PER MOBILE*/
 }
 
 .menu-center-aside h4 {
@@ -105,9 +116,13 @@ aside {
 }
 
 .menu-over ul li {
+    line-height: 30px;
     list-style: none;
 }
 
+.menu-over a:hover, .menu-center-aside a i:hover, .menu-center-aside a:hover {
+    color: white;
+}
 
 /********************  MENU BOTTOM **********************/
 
@@ -134,6 +149,10 @@ aside {
 .menu-bottom-aside ul li:nth-of-type(1) a {
     font-size: 12px;
     color: grey;   
+}
+
+.menu-bottom-aside ul li:nth-of-type(1) a:hover {
+    color: white;
 }
 
 .menu-bottom-aside ul hr {
@@ -176,7 +195,9 @@ header {
     border-radius: 20px;
 }
 
-
+.btn a:hover{
+    font-size: 18px;
+}
 
 
 
@@ -198,7 +219,6 @@ section {
 /******************** MENU CORPO **********************/
 
 .row h2 {
-    
     margin: 20px;
 }
 .menu-corpo ul{
@@ -210,6 +230,10 @@ section {
 }
 .menu-corpo ul li a {
     text-decoration: none;
+    color: grey;
+}
+
+.menu-corpo ul li a:hover {
     color: white;
 }
 
@@ -228,6 +252,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .box-song2 img{
@@ -236,7 +261,39 @@ section {
 
 .box-song img, .box-song2 img {
     width: 160px;
+    
 }
+
+
+
+/******************** EFFETTO IMMAGINI **********************/
+
+.box-song img:hover, .box-song2 img:hover {
+    opacity: 0.5;
+}
+
+.play-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    position: relative;
+}
+.play-img i {
+    position: absolute;
+    font-size: 50px;
+    display: none;
+}
+
+.play-img:hover i { 
+    display: inline;
+}
+
+
+
+
+
+
+
 
 .box-song h3 {
     padding: 10px 0px;
