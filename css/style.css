@@ -41,11 +41,14 @@ aside {
     align-items: center;
 }
 
-.
+
 
 /********************  MENU **********************/
 
 /********************  MENU TOP**********************/
+.logo{
+    width: 1000px;
+}
 
 .menu-top-aside ul, .menu-bottom-aside ul {
     list-style: none;
@@ -66,8 +69,7 @@ aside {
 
 .menu-over {
     overflow: auto;
-    height: calc(100% - 221px - 170px);
-    
+    min-height: 20%;
 }
 
 .menu-center-aside {
@@ -89,14 +91,12 @@ aside {
     color: grey;
 }
 
-
-
 .menu-over ul li {
     list-style: none;
 }
 
 
-/********************  MENU BTTOM **********************/
+/********************  MENU BOTTOM **********************/
 
 .menu-bottom-aside ul li:nth-of-type(1) img{
     width: 20px;
