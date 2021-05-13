@@ -7,7 +7,7 @@ body >* {
 
 
 
-
+/******************** CORPO PAGINA **********************/
 
 main {
     height: calc(100vh - 90px);
@@ -21,6 +21,7 @@ main {
 
 
 
+/******************** PARTE MENU SINISTRA **********************/
 
 aside {  
     background-color: #000000;
@@ -28,9 +29,11 @@ aside {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    /* provvisori */
-    /* min-height: 480px; */
+    min-width: 53px;
+    padding: 10px 0px;
 }
+
+/******************** CONTENITORE DEI MENU **********************/
 
 .menu-top-aside, .menu-bottom-aside  {
     display: flex;
@@ -38,9 +41,48 @@ aside {
     align-items: center;
 }
 
-aside img {
-    width: 50px;
+/********************  MENU **********************/
+
+.menu-top-aside ul, .menu-bottom-aside ul {
+    list-style: none;
 }
+
+.menu-top-aside ul li, .menu-bottom-aside ul li{
+    display: flex;
+    align-items: center;
+}
+
+.menu-top-aside ul li a, .menu-bottom-aside ul li a {
+    text-decoration: none;
+    color: white;
+    /* display: none;  PER MOBILE*/
+}
+
+.menu-bottom-aside ul li:nth-of-type(1) img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.menu-bottom-aside ul li:nth-of-type(1) a {
+    font-size: 12px;
+    color: grey;
+}
+
+.menu-bottom-aside ul hr {
+    background-color: white;
+    height: 2px;
+}
+
+/******************** IMMAGINI MENU **********************/
+
+.menu-top-aside img, .menu-bottom-aside img {
+    padding: 10px 0px;
+    width: 40px;
+}
+
+
+
+/********************  CONTENITORE CENTRALE **********************/
 
 .main-content {
     height: 100%;
@@ -48,11 +90,7 @@ aside img {
 }
 
 
-
-
-
-
-
+/******************** PARTE HEADER CONTENITORE CENTRALE **********************/
 
 header { 
     z-index: 90000;
@@ -78,6 +116,7 @@ header {
 
 
 
+/******************** PARTE CORPO CENTRALE **********************/
 
 section {
     margin-top: 90px;
@@ -90,7 +129,7 @@ section {
 
 
 
-
+/******************** FOOTER **********************/
 
 footer {
     width: 100%;
