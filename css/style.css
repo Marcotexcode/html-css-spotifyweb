@@ -257,10 +257,12 @@ section {
 footer {
     width: 100%;
     position: fixed;
+    left: 0;
     bottom: 0;
     z-index: 9000;
     height: 90px;
     background-color: #282828;
+    padding: 0px 10px;
 }
 
 
@@ -312,4 +314,29 @@ footer {
 
 .time span {
     margin: 0px 10px;
+}
+
+
+.vol i {
+    font-size: 15px;
+    padding: 0px 10px;
+ }
+
+.vol {
+    display: flex;
+    align-items: center;
+}
+
+.vol hr:first-of-type {
+    background: rgb(167, 167, 167);
+    width: 20px;
+    height: 3px;
+    border: none;
+}
+
+.vol hr {
+    background: rgb(107, 107, 107);
+    width: 40px;
+    height: 3px;
+    border: none;
 }
