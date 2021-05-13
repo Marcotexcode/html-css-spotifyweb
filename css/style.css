@@ -50,7 +50,7 @@ aside {
 
 /********************  MENU TOP**********************/
 .logo{
-    width: 1000px;
+    width: 1000%;
 }
 
 .menu-top-aside ul, .menu-bottom-aside ul {
@@ -72,7 +72,7 @@ aside {
 
 .menu-over {
     overflow-y: auto;
-    min-height: 30%;
+    height: 30px;
     display: block;
 }
 
