@@ -60,7 +60,7 @@ aside {
 
 /********************  MENU TOP**********************/
 .logo{
-    width: 100%;
+    width: 70%;
 }
 
 .menu-top-aside ul, .menu-bottom-aside ul {
@@ -201,18 +201,26 @@ section {
     
     margin: 20px;
 }
-.menu ul{
+.menu-corpo ul{
     list-style: none;
     text-align: center;
 }
-.menu ul li {
+.menu-corpo ul li {
     padding: 10px 0px;
 }
-.menu ul li a {
+.menu-corpo ul li a {
     text-decoration: none;
     color: white;
 }
 
+.menu-corpo li:first-of-type hr{
+    margin: 0 auto;
+    width: 60px;
+    height: 2px;
+    margin-top: 10px;
+    background-color: #99e22d;
+    border:  none;
+}
 
 /******************** CORPO CANZONI **********************/
 
@@ -253,4 +261,55 @@ footer {
     z-index: 9000;
     height: 90px;
     background-color: #282828;
+}
+
+
+/******************** FOOTER SINITRO**********************/
+
+
+.box-left img {
+    width: 40px;
+}
+
+.box-left {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    margin: 0px 10px;
+}
+
+/******************** FOOTER CENTRALE **********************/
+
+.played {
+   text-align: center; 
+   
+}
+
+.played i {
+    font-size: 20px;
+    padding: 0px 20px;
+ }
+
+ .time {
+     display: flex;
+     align-items: center;
+     margin: 10px 0px;
+ }
+.time hr:first-of-type  {
+    background: rgb(167, 167, 167);
+    width: 100px;
+    height: 3px;
+    border: none;
+}
+.time hr {
+    background: rgb(107, 107, 107);
+    width: 300px;
+    height: 3px;
+    border: none;
+}
+
+.time span {
+    margin: 0px 10px;
 }
