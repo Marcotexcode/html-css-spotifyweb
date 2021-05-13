@@ -35,13 +35,17 @@ aside {
 
 /******************** CONTENITORE DEI MENU **********************/
 
-.menu-top-aside, .menu-bottom-aside  {
+.menu-top-aside, .menu-bottom-aside, .menu-over, .menu-center-aside {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.
+
 /********************  MENU **********************/
+
+/********************  MENU TOP**********************/
 
 .menu-top-aside ul, .menu-bottom-aside ul {
     list-style: none;
@@ -58,6 +62,42 @@ aside {
     /* display: none;  PER MOBILE*/
 }
 
+/********************  MENU CENTER **********************/
+
+.menu-over {
+    overflow: auto;
+    height: calc(100% - 221px - 170px);
+    
+}
+
+.menu-center-aside {
+    margin: 10px 0px;
+}
+
+.menu-center-aside h4 {
+    margin: 5px 0px;
+}
+
+.menu-over a i, .menu-center-aside a i {
+    font-size: 40px;
+    vertical-align: middle;
+    color: grey;
+}
+
+.menu-over a, .menu-center-aside a  {
+    text-decoration: none;
+    color: grey;
+}
+
+
+
+.menu-over ul li {
+    list-style: none;
+}
+
+
+/********************  MENU BTTOM **********************/
+
 .menu-bottom-aside ul li:nth-of-type(1) img{
     width: 20px;
     margin-right: 10px;
@@ -72,6 +112,8 @@ aside {
     background-color: white;
     height: 2px;
 }
+
+
 
 /******************** IMMAGINI MENU **********************/
 
