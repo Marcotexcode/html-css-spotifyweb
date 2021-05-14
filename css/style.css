@@ -329,13 +329,15 @@ footer {
     z-index: 9000;
     height: 90px;
     background-color: #282828;
-    padding: 0px 10px;
+    padding: 0px 5px;
 }
 
 
 /******************** FOOTER SINITRO**********************/
 
-
+.cont-foot-sx {
+    flex-grow: 1;
+}
 .box-left img {
     width: 40px;
 }
@@ -346,19 +348,28 @@ footer {
 }
 
 .text {
-    margin: 0px 10px;
+    margin: 0px 5px 0px 0px;
 }
 
 /******************** FOOTER CENTRALE **********************/
 
+
+.cont-foot-center {
+    height: 100%;
+    border: 1px solid red;
+    flex-grow: 2;
+}
+
+
 .played {
+    margin-top: 20px;
    text-align: center; 
    width: 50px;
 }
 
 .played i {
     font-size: 20px;
-    padding: 0px 20px;
+    padding: 0px 10px;
  }
 
  .time {
@@ -380,13 +391,21 @@ footer {
 }
 
 .time span {
-    margin: 0px 10px;
+    margin: 0px 5px;
 }
 
 
+
+/******************** FOOTER DESTRO **********************/
+
+
+.cont-foot-dx {
+    flex-grow: 1;
+}
+
 .vol i {
     font-size: 15px;
-    padding: 0px 10px;
+    padding: 0px 5px;
  }
 
 .vol {
@@ -499,6 +518,8 @@ footer {
     }
 
 
+    /******************** FOOTER **********************/
 
+    
 
 }
