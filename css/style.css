@@ -336,8 +336,15 @@ footer {
 /******************** FOOTER SINITRO**********************/
 
 .cont-foot-sx {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
     flex-grow: 1;
+    
+
 }
+
 .box-left img {
     width: 40px;
 }
@@ -348,7 +355,28 @@ footer {
 }
 
 .text {
-    margin: 0px 5px 0px 0px;
+    margin: 0px 5px 0px 5px;
+}
+
+.text span a{
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+}
+
+.text span a:hover {
+    color: white;
+    text-decoration: underline ;
+}
+
+.pref i{
+    margin: 5px 0px;
+    display: block;
+    color: grey;
+}
+.pref i:hover {
+    color: white;
+    font-size: 20px;
 }
 
 /******************** FOOTER CENTRALE **********************/
@@ -356,15 +384,14 @@ footer {
 
 .cont-foot-center {
     height: 100%;
-    border: 1px solid red;
     flex-grow: 2;
 }
 
 
 .played {
     margin-top: 20px;
-   text-align: center; 
-   width: 50px;
+    text-align: center; 
+    width: 50px;
 }
 
 .played i {
@@ -372,10 +399,14 @@ footer {
     padding: 0px 10px;
  }
 
+.played i:nth-child(3):hover {
+    transform: scale(2);
+}
+
  .time {
-     display: flex;
-     align-items: center;
-     margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
  }
 .time hr:first-of-type  {
     background: rgb(167, 167, 167);
@@ -383,11 +414,27 @@ footer {
     height: 3px;
     border: none;
 }
+
+.time:hover hr:first-of-type {
+    background: #99e22d;
+}
+
 .time hr {
     background: rgb(107, 107, 107);
     width: 300%;
     height: 3px;
     border: none;
+}
+.ball {
+    background-color: white;
+    width: 62px;
+    height: 14px;
+    border-radius: 50%;
+    display: none;
+}
+
+.time:hover .ball{
+    display: block;
 }
 
 .time span {
@@ -400,7 +447,12 @@ footer {
 
 
 .cont-foot-dx {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
     flex-grow: 1;
+    
 }
 
 .vol i {
@@ -427,8 +479,20 @@ footer {
     border: none;
 }
 
+.ball2 {
+    background-color: white;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: none;
+}
 
-
+.vol:hover hr:first-of-type {
+    background: #99e22d;
+}
+.vol:hover .ball2{
+    display: block;
+}
 
 
 /******************** RESPONSIVE **********************/
