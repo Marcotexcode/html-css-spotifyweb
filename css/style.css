@@ -476,18 +476,27 @@ footer {
 
 
 
-    /******************** PARTE MENU SINISTRA **********************/
+    /******************** PARTE HEADER CONTENITORE CENTRALE **********************/
 
     header {
         width: calc(100% - 50px);
     }
 
 
+    /******************** MENU CORPO **********************/
+
+
+    .menu-corpo ul li a {
+        font-size: 10px;
+    }
 
 
 
+    /******************** CORPO CANZONI **********************/
 
-
+    .box-song h3, .box-song span {
+        font-size: 14px;
+    }
 
 
 
