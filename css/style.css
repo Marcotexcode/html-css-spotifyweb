@@ -29,7 +29,7 @@ aside {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    min-width: 53px;
+    max-width: 200px;
     padding: 10px 0px;
 }
 
@@ -60,8 +60,11 @@ aside {
 
 
 /********************  MENU TOP**********************/
-.logo{
+.logo-grande{
     width: 70%;
+}
+.logo-piccolo {
+    display: none;
 }
 
 .menu-top-aside ul, .menu-bottom-aside ul {
@@ -167,6 +170,11 @@ aside {
 
 /********************  CONTENITORE CENTRALE **********************/
 
+
+.corpo-cont-centrale {
+    overflow: hidden;
+}
+
 .main-content {
     height: 100%;
     background-color: blue;
@@ -179,7 +187,7 @@ header {
     z-index: 90000;
     height: 90px;
     position: fixed;
-    width: calc((100% / 12) * 10);
+    width: calc(100% - 200px);
     background-color: #080b12;
     display: flex;
     align-items: center;
@@ -260,9 +268,11 @@ section {
 }
 
 .box-song img, .box-song2 img {
-    width: 160px;
+    width: 120px;
     
 }
+
+
 
 
 
@@ -343,7 +353,7 @@ footer {
 
 .played {
    text-align: center; 
-   
+   width: 50px;
 }
 
 .played i {
@@ -358,13 +368,13 @@ footer {
  }
 .time hr:first-of-type  {
     background: rgb(167, 167, 167);
-    width: 100px;
+    width: 100%;
     height: 3px;
     border: none;
 }
 .time hr {
     background: rgb(107, 107, 107);
-    width: 300px;
+    width: 300%;
     height: 3px;
     border: none;
 }
@@ -396,4 +406,83 @@ footer {
     width: 40px;
     height: 3px;
     border: none;
+}
+
+
+
+
+
+/******************** RESPONSIVE **********************/
+
+
+
+/******************** MOBILE XS **********************/
+
+
+@media screen and (max-width: 575px ) {
+
+
+    aside {
+        max-width: 50px;
+    }
+        
+    
+    .menu {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .logo-grande{
+        display: none;
+    }
+    .logo-piccolo {
+        display: block;
+    }
+    
+    .menu-top-aside ul, .menu-bottom-aside ul{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu-top-aside ul li a, .menu-bottom-aside ul li a {
+        margin: 0 auto;
+        display: none; 
+        width:100%;
+    }
+
+    .menu-bottom-aside ul li:nth-of-type(1) img {
+        width: 100%;
+        margin-right: 0;
+    }
+    .menu-bottom-aside ul hr {
+        display: none;
+    }
+
+    .menu-bottom-aside ul li:nth-of-type(2) img{
+        margin: 0;
+        width: none;
+    }
+
+    .menu-center-aside {
+        display: none;
+    }
+
+    .menu-over {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
