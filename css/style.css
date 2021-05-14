@@ -177,7 +177,6 @@ aside {
 
 .main-content {
     height: 100%;
-    background-color: blue;
 }
 
 
@@ -188,7 +187,7 @@ header {
     height: 90px;
     position: fixed;
     width: calc(100% - 200px);
-    background-color: #080b12;
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -212,6 +211,7 @@ header {
 /******************** PARTE CORPO CENTRALE **********************/
 
 section {
+    z-index: 9000;
     margin-top: 90px;
     overflow: auto;
     height: calc(100% - 90px);
@@ -508,9 +508,75 @@ footer {
     /******************** PARTE MENU SINISTRA **********************/
 
     aside {
-        max-width: 50px;
+        max-width: 50px; 
     }  
+
+
+
     
+    /******************** EFFETTO MENU COMPARSA **********************/
+
+    aside:hover {
+            position: relative;
+            z-index: 9000;
+            background-color: #000000;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            max-width: 200px;
+            padding: 10px 0px;
+    }  
+
+    aside:hover .menu-top-aside ul li a, .menu-bottom-aside ul li a {
+        text-decoration: none;
+        color: grey;
+        display: block;  
+    }
+
+
+    aside:hover .menu-over {
+        overflow-y: auto;
+        height: 100%;
+         display: block;
+    }
+    
+    aside:hover .menu-center-aside {
+        margin: 10px 0px;
+         display: block;  
+    }
+
+
+    aside:hover .menu-bottom-aside ul li:nth-of-type(1) img {
+        width: 40px;
+    }
+
+
+    aside:hover .logo-grande{
+        display: block;
+        margin-left: 20px;
+    }
+    aside:hover .logo-piccolo {
+        display: none;
+    }
+
+    aside:hover .menu-bottom-aside ul hr {
+        display: block;
+        width: 100%;
+    }
+    
+    aside:hover .menu-bottom-aside ul li:nth-of-type(1) a{
+        display: block;
+    }
+    
+    aside:hover .menu-bottom-aside ul li:nth-of-type(2) a{
+        display: block;
+    }
+   
+
+
+    
+
     .menu {
         display: flex;
         align-items: center;    
@@ -530,9 +596,7 @@ footer {
     }
 
     .menu-top-aside ul li a, .menu-bottom-aside ul li a {
-        margin: 0 auto;
         display: none; 
-        width:100%;
     }
 
     .menu-bottom-aside ul li:nth-of-type(1) img {
@@ -561,10 +625,11 @@ footer {
 
     /******************** PARTE HEADER CONTENITORE CENTRALE **********************/
 
-    header {
+    header{
         width: calc(100% - 50px);
     }
 
+  
 
     /******************** MENU CORPO **********************/
 
