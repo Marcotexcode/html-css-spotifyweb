@@ -174,7 +174,7 @@ aside {
 /******************** INIZIO HEADER **********************/
 
 header { 
-    z-index: 90000;
+    z-index: 3;
     height: 90px;
     position: fixed;
     width: calc(100% - 200px);
@@ -320,7 +320,7 @@ footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    z-index: 900000;
+    z-index: 2;
     height: 90px;
     background-color: #282828;
     padding: 0px 5px;
@@ -492,72 +492,123 @@ footer {
 
 
 
-/******************** RESPONSIVE MOBILE XS **********************/
+/******************** REGOLE BOTTONE MENU COMPARSA **********************/
 
+input {
+    display: none;
+}
+
+label {
+    position: absolute;
+    font-size: 0;
+}
+
+
+
+
+/******************** RESPONSIVE MOBILE XS **********************/
 @media screen and (max-width: 575px ) {
 
- 
+
     /* EFFETTO MENU COMPARSA */
-    aside:hover header {
-        width: calc(100% + 50px);
-    }
-    aside:hover {
-        height: calc(100% - 90px);
-        z-index: 900000;
+
+    label {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
         position: absolute;
-        max-width: 500px;
-        padding: 10px 60px 0px 10px;
+        z-index: 5;
+        color: white;
+        left: 10px;
+        top: 5px;     
+    }
+   
+    input {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .frec-sx {
+        display: none;
+    }
+    
+    .menu-top-aside {
+        margin-top: 100px;
+    }
+
+    #toggle:checked + aside {
+        height: calc(100% - 90px);
+        z-index: 4;
+        position: absolute;
+        min-width: 100%;
+        padding: 10px 0px 0px 10px;
     }  
 
-    aside:hover .menu-top-aside ul li a, .menu-bottom-aside ul li a {
+    #toggle:checked + aside .menu-top-aside {
+        margin: 0;
+        width: 100%;
+    }
+
+    #toggle:checked + aside .menu-top-aside ul li a, .menu-bottom-aside ul li a {
         text-decoration: none;
         color: grey;
         display: block;  
     }
 
-    aside:hover .menu-over {
+    #toggle:checked + aside .menu-over {
         overflow-y: auto;
         height: 100%;
         display: block;
     }
     
-    aside:hover .menu-center-aside {
+    #toggle:checked + aside .menu-center-aside {
         margin: 10px 0px;
         display: block;  
     }
 
-    aside:hover .menu-bottom-aside ul li:nth-of-type(1) img {
+    #toggle:checked + aside .menu-bottom-aside ul li:nth-of-type(1) img {
         width: 40px;
     }
 
-    aside:hover .logo-grande{
+    #toggle:checked + aside .menu-bottom-aside {
+        width: 100%;
+    }
+
+    #toggle:checked + footer {
+        z-index: 5;
+    }
+
+    #toggle:checked + aside .logo-grande{
         display: block;
         margin-left: 20px;
     }
     
-    aside:hover .logo-piccolo {
+    #toggle:checked + aside .logo-piccolo {
         display: none;
     }
 
-    aside:hover .menu-bottom-aside ul hr {
+    #toggle:checked + aside .menu-bottom-aside ul hr {
         display: block;
         width: 100%;
     }
     
-    aside:hover .menu-bottom-aside ul li:nth-of-type(1) a{
+    #toggle:checked + aside .menu-bottom-aside ul li:nth-of-type(1) a{
         display: block;
     }
     
-    aside:hover .menu-bottom-aside ul li:nth-of-type(2) a{
+    #toggle:checked + aside .menu-bottom-aside ul li:nth-of-type(2) a{
         display: block;
     }
    
 
 
 
-     /* MENU SINISTRO */
+    /* MENU SINISTRO */
 
-     aside {
+    aside {
         justify-content: space-between;
         max-width: 50px; 
         display: flex;
