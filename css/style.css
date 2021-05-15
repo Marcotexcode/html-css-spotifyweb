@@ -292,7 +292,6 @@ section {
 }
 
 .play-img {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -321,7 +320,7 @@ footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    z-index: 9000;
+    z-index: 900000;
     height: 90px;
     background-color: #282828;
     padding: 0px 5px;
@@ -499,9 +498,14 @@ footer {
 
  
     /* EFFETTO MENU COMPARSA */
-
+    aside:hover header {
+        width: calc(100% + 50px);
+    }
     aside:hover {
-        max-width: 200px;
+        height: calc(100% - 90px);
+        z-index: 900000;
+        position: absolute;
+        max-width: 500px;
         padding: 10px 60px 0px 10px;
     }  
 
