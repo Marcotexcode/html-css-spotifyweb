@@ -1,4 +1,7 @@
 
+
+/******************** REGOLE GENERALI **********************/
+
 body >* {
     color: white;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -7,11 +10,16 @@ body >* {
 
 
 
-/******************** CORPO PAGINA **********************/
+/******************** CONTENITORE MENU SINISTRO / PARTE CENTRALE **********************/
 
 main {
     height: calc(100vh - 90px);
 }
+
+
+
+
+/******************** RIGA MENU SINISTRO / PARTE CENTRALE **********************/
 
 .conte-sup {
     height: 100%;
@@ -20,56 +28,41 @@ main {
 
 
 
-
-/******************** PARTE MENU SINISTRA **********************/
+/******************** INIZIO  MENU SINISTRO **********************/
 
 aside {  
     background-color: #000000;
     height: 100%;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    max-width: 200px;
-    padding: 10px 0px;
-}
-
-/******************** CONTENITORE DEI MENU **********************/
-
-.menu-top-aside, .menu-bottom-aside, .menu-over, .menu-center-aside {
-    display: flex;
-    flex-direction: column;
+    padding: 10px 60px 0px 10px;
 }
 
 
 
-/********************  MENU **********************/
-.menu {
-    overflow: hidden;
-    padding: 10px 20px;
-}
 
-/******************** IMMAGINI MENU **********************/
+/* REGOLE GENERALI MENU SINISTRO */
 
 .menu-top-aside ul li img, .menu-bottom-aside img {
-    padding: 15px 0px;
+    padding: 10px 0px;
     width: 30px;
-    
 }
 
 
 
 
-/********************  MENU TOP**********************/
-.logo-grande{
-    width: 70%;
+/********************  PARTE SUPERIORE MENU SINISTRO **********************/
+.logo-grande {
+    padding-bottom: 20px;
 }
+
 .logo-piccolo {
     display: none;
 }
 
-.menu-top-aside ul, .menu-bottom-aside ul {
-    list-style: none;
-}
+/* PARTE SUPERIORE MENU SINISTRO REGOLE GENERALI */
+
+
 
 .menu-top-aside ul li, .menu-bottom-aside ul li{
     display: flex;
@@ -79,7 +72,6 @@ aside {
 .menu-top-aside ul li a, .menu-bottom-aside ul li a {
     text-decoration: none;
     color: grey;
-    /* display: none;  PER MOBILE*/
 }
 
 .menu-top-aside ul li a:hover, .menu-bottom-aside ul li a:hover {
@@ -90,27 +82,33 @@ aside {
     color: white;
 }
 
-/********************  MENU CENTER **********************/
+
+
+
+/********************  PARTE CENTRALE MENU SINISTRO **********************/
 
 .menu-over {
     overflow-y: auto;
     height: 100%;
-    /* display: none;  PER MOBILE*/
 }
 
 .menu-center-aside {
     margin: 10px 0px;
-    /* display: none;  PER MOBILE*/
 }
 
 .menu-center-aside h4 {
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
+
+.menu-over ul li {
+    line-height: 30px;
+}
+
+/* PARTE CENTRALE MENU SINISTRO REGOLE GENERALI */
 
 .menu-over a i, .menu-center-aside a i {
     font-size: 40px;
     vertical-align: middle;
-    color: grey;
 }
 
 .menu-over a, .menu-center-aside a  {
@@ -118,21 +116,25 @@ aside {
     color: grey;
 }
 
-.menu-over ul li {
-    line-height: 30px;
-    list-style: none;
-}
-
 .menu-over a:hover, .menu-center-aside a i:hover, .menu-center-aside a:hover {
     color: white;
 }
 
-/********************  MENU BOTTOM **********************/
+
+
+
+/********************  PARTE INFERIORE MENU SINISTRO **********************/
 
 .menu-bottom-aside li {
     padding: 10px 0px;
 }
 
+.menu-bottom-aside ul hr {
+    background-color: white;
+    margin: 10px 0px;
+}
+
+/* PARTE INFERIORE MENU SINISTRO REGOLE GENERALI */
 
 .menu-bottom-aside ul li:nth-of-type(1) img{
     width: 20px;
@@ -142,12 +144,11 @@ aside {
 .menu-bottom-aside ul li:nth-of-type(2) img {
     margin: 0px 10px 0px 0px;
     background-color: grey;
-    width: 28px;
-    height: 31px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     vertical-align: middle;
 }
-
 
 .menu-bottom-aside ul li:nth-of-type(1) a {
     font-size: 12px;
@@ -158,30 +159,19 @@ aside {
     color: white;
 }
 
-.menu-bottom-aside ul hr {
-    background-color: white;
-    height: 2px;
-}
 
 
 
-
-
-
-/********************  CONTENITORE CENTRALE **********************/
-
-
-.corpo-cont-centrale {
-    overflow: hidden;
-    margin-top: 90px;
-}
+/******************** INIZIO HEADER / PARTE CENTRALE **********************/
 
 .main-content {
     height: 100%;
 }
 
 
-/******************** PARTE HEADER CONTENITORE CENTRALE **********************/
+
+
+/******************** INIZIO HEADER **********************/
 
 header { 
     z-index: 90000;
@@ -209,32 +199,30 @@ header {
 
 
 
-/******************** PARTE CORPO CENTRALE **********************/
+
+/********************  INIZIO PARTE CENTRALE **********************/
 
 section {
-    z-index: 9000;
     overflow: auto;
     height: 100% ;
-    background-color: #141922;;
-    
+    background-color: #141922;;  
 }
 
-/******************** PARTE CORPO CENTRALE **********************/
-
-
-
-
-/******************** MENU CORPO **********************/
-
-.row h2 {
-    margin: 20px;
+.corpo-cont-centrale {
+    margin-top: 100px;
 }
+
+
+
+
+/******************** MENU PARTE CENTRALE **********************/
+
 .menu-corpo ul{
     list-style: none;
     text-align: center;
 }
 .menu-corpo ul li {
-    padding: 10px 0px;
+    padding: 10px 20px;
 }
 .menu-corpo ul li a {
     text-decoration: none;
@@ -254,7 +242,33 @@ section {
     border:  none;
 }
 
-/******************** CORPO CANZONI **********************/
+
+
+
+/******************** RIGHE CORPO PARTE CENTRALE **********************/
+
+.row h2 {
+    margin: 40px 20px 20px;
+}
+
+.box-song h3 {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.box-song span {
+    text-align: center;
+    padding: 0px 10px 10px 10px;
+}
+
+.sub {
+    margin: 0px 0px 20px 20px;
+}
+
+
+
+
+/* REGOLE GENERALI CORPO PARTE CENTRALE */
 
 .box-song, .box-song2 {
     display: flex;
@@ -268,26 +282,23 @@ section {
 }
 
 .box-song img, .box-song2 img {
-    width: 120px;
-    
+    width: 85%;   
 }
 
-
-
-
-
-/******************** EFFETTO IMMAGINI **********************/
+/* EFFETTO IMMAGINI CORPO PARTE CENTRALE */
 
 .box-song img:hover, .box-song2 img:hover {
     opacity: 0.5;
 }
 
 .play-img {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;  
     position: relative;
 }
+
 .play-img i {
     position: absolute;
     font-size: 50px;
@@ -303,23 +314,7 @@ section {
 
 
 
-
-
-.box-song h3 {
-    padding: 10px 0px;
-}
-.box-song span {
-    padding-bottom: 10px;
-}
-
-.sub {
-    margin: 0px 0px 20px 20px;
-}
-
-
-
-
-/******************** FOOTER **********************/
+/******************** INIZIO FOOER **********************/
 
 footer {
     width: 100%;
@@ -333,25 +328,20 @@ footer {
 }
 
 
-/******************** FOOTER SINITRO**********************/
 
-.cont-foot-sx {
+
+/********************  BOX SINISTRO **********************/
+
+.box-left {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     height: 100%;
     flex-grow: 1;
-    
-
 }
 
 .box-left img {
     width: 40px;
-}
-
-.box-left {
-    display: flex;
-    align-items: center;
 }
 
 .text {
@@ -374,19 +364,21 @@ footer {
     display: block;
     color: grey;
 }
+
 .pref i:hover {
     color: white;
     font-size: 20px;
 }
 
-/******************** FOOTER CENTRALE **********************/
 
+
+
+/********************  BOX CENTRALE **********************/
 
 .cont-foot-center {
     height: 100%;
     flex-grow: 2;
 }
-
 
 .played {
     margin-top: 20px;
@@ -397,17 +389,20 @@ footer {
 .played i {
     font-size: 20px;
     padding: 0px 10px;
- }
+}
 
 .played i:nth-child(3):hover {
     transform: scale(2);
 }
 
- .time {
+/* BARRA MINUTI CANZONE */
+
+.time {
     display: flex;
     align-items: center;
     margin: 10px 0px;
- }
+}
+
 .time hr:first-of-type  {
     background: rgb(167, 167, 167);
     width: 100%;
@@ -425,6 +420,7 @@ footer {
     height: 3px;
     border: none;
 }
+
 .ball {
     background-color: white;
     width: 62px;
@@ -443,26 +439,25 @@ footer {
 
 
 
-/******************** FOOTER DESTRO **********************/
 
+/******************** INIZIO BOX DESTRO **********************/
 
-.cont-foot-dx {
+.box-right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     height: 100%;
-    flex-grow: 1;
-    
+    flex-grow: 1;  
+}
+
+.vol {
+    display: flex;
+    align-items: center;
 }
 
 .vol i {
     font-size: 15px;
     padding: 0px 5px;
- }
-
-.vol {
-    display: flex;
-    align-items: center;
 }
 
 .vol hr:first-of-type {
@@ -490,42 +485,24 @@ footer {
 .vol:hover hr:first-of-type {
     background: #99e22d;
 }
+
 .vol:hover .ball2{
     display: block;
 }
 
 
-/******************** RESPONSIVE **********************/
 
 
-
-/******************** MOBILE XS **********************/
-
+/******************** RESPONSIVE MOBILE XS **********************/
 
 @media screen and (max-width: 575px ) {
 
-
-    /******************** PARTE MENU SINISTRA **********************/
-
-    aside {
-        max-width: 50px; 
-    }  
-
-
-
-    
-    /******************** EFFETTO MENU COMPARSA **********************/
+ 
+    /* EFFETTO MENU COMPARSA */
 
     aside:hover {
-            position: relative;
-            z-index: 9000;
-            background-color: #000000;
-            height: 100%;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            max-width: 200px;
-            padding: 10px 0px;
+        max-width: 200px;
+        padding: 10px 60px 0px 10px;
     }  
 
     aside:hover .menu-top-aside ul li a, .menu-bottom-aside ul li a {
@@ -534,28 +511,26 @@ footer {
         display: block;  
     }
 
-
     aside:hover .menu-over {
         overflow-y: auto;
         height: 100%;
-         display: block;
+        display: block;
     }
     
     aside:hover .menu-center-aside {
         margin: 10px 0px;
-         display: block;  
+        display: block;  
     }
-
 
     aside:hover .menu-bottom-aside ul li:nth-of-type(1) img {
         width: 40px;
     }
 
-
     aside:hover .logo-grande{
         display: block;
         margin-left: 20px;
     }
+    
     aside:hover .logo-piccolo {
         display: none;
     }
@@ -575,19 +550,29 @@ footer {
    
 
 
-    
 
-    .menu {
+     /* MENU SINISTRO */
+
+     aside {
+        justify-content: space-between;
+        max-width: 50px; 
         display: flex;
-        align-items: center;    
-    }
+        align-items: center;  
+        padding: 10px;
+    }  
 
     .logo-grande{
         display: none;
     }
+
     .logo-piccolo {
         display: block;
     }
+
+
+
+
+    /* PARTE SUPERIORE MENU SINISTRO */
     
     .menu-top-aside ul, .menu-bottom-aside ul{
         display: flex;
@@ -599,18 +584,10 @@ footer {
         display: none; 
     }
 
-    .menu-bottom-aside ul li:nth-of-type(1) img {
-        width: 100%;
-        margin-right: 0;
-    }
-    .menu-bottom-aside ul hr {
-        display: none;
-    }
 
-    .menu-bottom-aside ul li:nth-of-type(2) img{
-        margin: 0;
-        width: none;
-    }
+
+
+    /* PARTE CENTRALE MENU SINISTRO */
 
     .menu-center-aside {
         display: none;
@@ -623,7 +600,26 @@ footer {
 
 
 
-    /******************** PARTE HEADER CONTENITORE CENTRALE **********************/
+    /* PARTE INFERIORE MENU SINISTRO */
+
+    .menu-bottom-aside ul li:nth-of-type(1) img {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .menu-bottom-aside ul hr {
+        display: none;
+    }
+
+    .menu-bottom-aside ul li:nth-of-type(2) img{
+        margin: 0;
+        width: none;
+    }
+
+
+
+
+    /********************  HEADER PARTE CENTRALE **********************/
 
     header{
         width: calc(100% - 50px);
@@ -631,8 +627,8 @@ footer {
 
   
 
-    /******************** MENU CORPO **********************/
 
+    /******************** MENU PARTE CENTRALE **********************/
 
     .menu-corpo ul li a {
         font-size: 10px;
@@ -640,15 +636,11 @@ footer {
 
 
 
-    /******************** CORPO CANZONI **********************/
+    /******************** CORPO PARTE CENTRALE **********************/
 
     .box-song h3, .box-song span {
         font-size: 14px;
     }
-
-
-    /******************** FOOTER **********************/
-
     
 
 }
