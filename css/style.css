@@ -320,7 +320,7 @@ footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    z-index: 2;
+    z-index: 5;
     height: 90px;
     background-color: #282828;
     padding: 0px 5px;
@@ -504,6 +504,9 @@ label {
     font-size: 0;
 }
 
+.frec-dx i {
+    z-index: 1;
+}
 
 
 
@@ -700,4 +703,21 @@ label {
     }
     
 
+}
+
+@media screen and (max-width: 400px ) {
+
+
+    .box-left img {
+        display: none;
+    }
+
+    .fa-list, .fa-desktop  {
+        display: none;
+    }
+
+
+    .pref i {
+        display: none;
+    }
 }
