@@ -174,7 +174,7 @@ aside {
 /******************** INIZIO HEADER **********************/
 
 header { 
-    z-index: 3;
+    z-index: 1;
     height: 90px;
     position: fixed;
     width: calc(100% - 200px);
