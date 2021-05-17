@@ -418,6 +418,7 @@ footer {
     width: 300%;
     height: 3px;
     border: none;
+    cursor: pointer;
 }
 
 .ball {
@@ -443,7 +444,6 @@ footer {
 
 .box-right {
     display: flex;
-    align-items: center;
     justify-content: flex-end;
     height: 100%;
     flex-grow: 1;  
@@ -471,6 +471,7 @@ footer {
     width: 40px;
     height: 3px;
     border: none;
+    cursor: pointer;
 }
 
 .ball2 {
@@ -582,8 +583,9 @@ label {
     }
 
     #toggle:checked + aside .logo-grande{
+        width: 40%;
         display: block;
-        margin-left: 20px;
+        margin: 0 auto;
     }
     
     #toggle:checked + aside .logo-piccolo {
